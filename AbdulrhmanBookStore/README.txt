@@ -80,3 +80,5 @@ so somehow the problem was fix i do not how but sui!
 done editing the CATgory class
 added nee class called ISP_Calls  
 NEW SP_CALL.CS
+try the editi the work 
+promblem GetDbConnection does not work because does not have defifntion 
