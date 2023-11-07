@@ -79,3 +79,4 @@ problem IcateogryRespotry does not work i do not know why but contnines and see 
 so somehow the problem was fix i do not how but sui!
 done editing the CATgory class
 added nee class called ISP_Calls  
+NEW SP_CALL.CS
