@@ -64,3 +64,5 @@ add new table and aslo new class
 
 11/6/2023
 just add addcategory different way i guess 
+did not work
+create the migrations update the appsettings
