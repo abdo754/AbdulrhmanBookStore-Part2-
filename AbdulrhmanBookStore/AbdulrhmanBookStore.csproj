@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AbdulrhmanBooks.DataAccess\AbdulrhmanBooks.DataAccess.csproj" />
     <ProjectReference Include="..\AbdulrhmanBooks.Models\AbdulrhmanBooks.Models.csproj" />
+    <ProjectReference Include="..\AbdulrhmanBooks.Utilty\AbdulrhmanBooks.Utilty.csproj" />
   </ItemGroup>
 
 </Project>
