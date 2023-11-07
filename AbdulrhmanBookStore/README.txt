@@ -66,3 +66,5 @@ add new table and aslo new class
 just add addcategory different way i guess 
 did not work
 create the migrations update the appsettings
+update the database
+make new  file called Catgory.cs
