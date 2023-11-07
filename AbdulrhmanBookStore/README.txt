@@ -76,3 +76,4 @@ other folder than in side of it a class
 add the add and also remove object and as the item
 used the folder the one is called respository
 problem IcateogryRespotry does not work i do not know why but contnines and see what happens
+so somehow the problem was fix i do not how but sui!

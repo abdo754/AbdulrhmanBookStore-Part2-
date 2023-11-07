@@ -14,5 +14,9 @@ namespace AbdulrhmanBooks.DataAccess.Repository
         {
             _db = db; // Correct the field name
         }
+        public void Update(Category category)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
