@@ -73,3 +73,4 @@ Edited the dbcontext
 2.2 Repository 
 new folder called IRepositiory
 other folder than in side of it a class 
+add the add and also remove object and as the item
