@@ -68,3 +68,4 @@ did not work
 create the migrations update the appsettings
 update the database
 make new  file called Catgory.cs
+Edited the dbcontext
