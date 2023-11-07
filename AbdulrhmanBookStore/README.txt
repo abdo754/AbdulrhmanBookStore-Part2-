@@ -69,3 +69,5 @@ create the migrations update the appsettings
 update the database
 make new  file called Catgory.cs
 Edited the dbcontext
+
+2.2 Repository 
