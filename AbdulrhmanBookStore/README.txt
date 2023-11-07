@@ -71,3 +71,5 @@ make new  file called Catgory.cs
 Edited the dbcontext
 
 2.2 Repository 
+new folder called IRepositiory
+other folder than in side of it a class 

@@ -14,8 +14,4 @@
     <ProjectReference Include="..\AbdulrhmanBooks.Utilty\AbdulrhmanBooks.Utilty.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repository\IRepository\" />
-  </ItemGroup>
-
 </Project>
