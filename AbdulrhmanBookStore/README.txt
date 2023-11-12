@@ -87,6 +87,7 @@ promblem GetDbConnection does not work because does not have defifntion
 update the foler Respostiry  by add new folders 
 
 11/12/2023
+2.3
 find the mistake it i did not write using Microsoft.EntityFrameworkCore; so dbconnection had an error
 make ne file calld UnitOfWork and edited
 add new file to the Repostory and edited 
@@ -95,3 +96,4 @@ done
 Some how they are not connected???
 nvm i forgot ot add using commmetns 
 Now create new controller to the controller file and also make it connections 
+add new raze view in catgory file and use the code from the blackbored the you have provied
