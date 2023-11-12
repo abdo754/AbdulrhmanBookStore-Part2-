@@ -94,3 +94,4 @@ forget the save the changees
 done 
 Some how they are not connected???
 nvm i forgot ot add using commmetns 
+Now create new controller to the controller file and also make it connections 
