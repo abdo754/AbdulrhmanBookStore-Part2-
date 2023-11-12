@@ -85,3 +85,6 @@ promblem GetDbConnection does not work because does not have defifntion
 
 11/9/2023
 update the foler Respostiry  by add new folders 
+
+11/12/2023
+find the mistake it i did not write using Microsoft.EntityFrameworkCore; so dbconnection had an error
