@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AbdulrhmanBooks.DataAccess.Repository.IRepository
 {
-    interface UnitOfWork :IDisposable
+   public interface IUnitOfWork :IDisposable
     {
         ICategoryRepository Category { get; }
         ISP_Call IS_Call { get; }

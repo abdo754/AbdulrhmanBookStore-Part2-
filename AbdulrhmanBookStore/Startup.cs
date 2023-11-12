@@ -1,4 +1,6 @@
 using AbdulrhmanBookStore.DataAccess.Data;
+using AbdulrhmanBooks.DataAccess.Repository.IRepository;
+using AbdulrhmanBooks.DataAccess.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,6 +14,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
 
 namespace AbdulrhmanBookStore
 {
@@ -34,6 +37,7 @@ namespace AbdulrhmanBookStore
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 
