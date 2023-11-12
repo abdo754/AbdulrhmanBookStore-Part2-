@@ -1,5 +1,5 @@
 ﻿using AbdulrhmanBooks.DataAccess.Repository.IRepository;
-using AbdulrhmanBookStore.DataAccess.Data
+using AbdulrhmanBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,5 +18,16 @@ namespace AbdulrhmanBooks.DataAccess.Repository
         }
         public CategoryRepository Category { get; private set; }
         public ISP_Call SP_Call { get; private set; }
+
+        public void Dispose()
+        {
+            _db.Dispose();
+        }
+
+        public void save()
+        {
+            _db.SaveChanges();
+        }
+
     }
 }

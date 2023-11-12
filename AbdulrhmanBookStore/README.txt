@@ -90,3 +90,5 @@ update the foler Respostiry  by add new folders
 find the mistake it i did not write using Microsoft.EntityFrameworkCore; so dbconnection had an error
 make ne file calld UnitOfWork and edited
 add new file to the Repostory and edited 
+forget the save the changees 
+done 
