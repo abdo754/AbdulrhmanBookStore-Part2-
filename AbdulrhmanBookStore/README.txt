@@ -98,3 +98,4 @@ nvm i forgot ot add using commmetns
 Now create new controller to the controller file and also make it connections 
 add new raze view in catgory file and use the code from the blackbored the you have provied
 chage the link name from privecy to category and link should work 
+chnaged postion of the link 
