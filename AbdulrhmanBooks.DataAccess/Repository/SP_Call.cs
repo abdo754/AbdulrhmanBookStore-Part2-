@@ -52,9 +52,12 @@ namespace AbdulrhmanBooks.DataAccess.Repository
                 var result = SqlMapper.QueryMultiple(sqlCon, procedureName, param, commandType: CommandType.StoredProcedure);
                 var item1 = result.Read<T1>().ToList();
                 var item2 = result.Read<T2>().ToList();
-
-                return new Tuple<IEnumerable<T1>, IEnumerable<T2>>(item1, item2);
+                if (item1 != null && item2 != null)
+                {
+                    return new Tuple<IEnumerable<T1>, IEnumerable<T2>>(item1, item2);
+                }
             }
+            return new Tuple<IEnumerable<T1>, IEnumerable<T2>>(new List<T1>(), new List<T2>());
         }
 
         public T OneRecord<T>(string procedureName, DynamicParameters param = null)
@@ -62,8 +65,8 @@ namespace AbdulrhmanBooks.DataAccess.Repository
             using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
             {
                 sqlCon.Open();
-                var value = sqlCon.Query<T>(procedureName, param, commandType: CommandType.StoredProcedure);
-                return value.FirstOrDefault();
+                var value = sqlCon.Query<T>(procedureName, param, commandType: System.Data.CommandType.StoredProcedure);
+                return (T)Convert.ChangeType(value.FirstOrDefault(), typeof(T));
             }
         }
 
@@ -72,7 +75,7 @@ namespace AbdulrhmanBooks.DataAccess.Repository
             using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
             {
                 sqlCon.Open();
-                return sqlCon.ExecuteScalar<T>(procedureName, param, commandType: CommandType.StoredProcedure);
+                return (T)Convert.ChangeType(sqlCon.ExecuteScalar<T>(procedureName, param, commandType: System.Data.CommandType.StoredProcedure), typeof(T));
             }
         }
     }
