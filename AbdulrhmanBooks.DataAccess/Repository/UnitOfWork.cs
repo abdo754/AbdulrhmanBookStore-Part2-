@@ -14,11 +14,11 @@ namespace AbdulrhmanBooks.DataAccess.Repository
         {
             _db = db;
             Category = new CategoryRepository(_db);
-            IS_Call = new SP_Call(_db); // Renamed from SP_Call to IS_Call
+            SP_Call = new SP_Call(_db); // Renamed from SP_Call to IS_Call
         }
 
         public ICategoryRepository Category { get; private set; }
-        public ISP_Call IS_Call { get; private set; } // Name changed to match the interface
+        public ISP_Call SP_Call { get; private set; } // Name changed to match the interface
 
         public void Dispose()
         {

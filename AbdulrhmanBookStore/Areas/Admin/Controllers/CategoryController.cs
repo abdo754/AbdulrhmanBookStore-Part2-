@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using AbdulrhmanBooks.DataAccess.Repository;
 using AbdulrhmanBooks.DataAccess.Repository.IRepository; // Ensure the correct namespace is used for IUnitOfWork
+using AbdulrhmanBooks.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,5 +32,6 @@ namespace AbdulrhmanBookStore.Areas.Admin.Controllers
             return Json(new { data = allObj }); // Return the data as JSON
         }
         #endregion
+
     }
 }
