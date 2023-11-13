@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -21,6 +21,10 @@
     <ProjectReference Include="..\AbdulrhmanBooks.DataAccess\AbdulrhmanBooks.DataAccess.csproj" />
     <ProjectReference Include="..\AbdulrhmanBooks.Models\AbdulrhmanBooks.Models.csproj" />
     <ProjectReference Include="..\AbdulrhmanBooks.Utilty\AbdulrhmanBooks.Utilty.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
