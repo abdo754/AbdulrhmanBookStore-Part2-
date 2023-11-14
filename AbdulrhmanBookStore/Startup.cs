@@ -65,10 +65,9 @@ namespace AbdulrhmanBookStore
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapAreaControllerRoute(
-                    name: "customer",
-                    areaName: "Customer",
-                    pattern: "{controller=Home}/{action=Index}/{id?}"
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}"
                 );
                 endpoints.MapRazorPages();
             });

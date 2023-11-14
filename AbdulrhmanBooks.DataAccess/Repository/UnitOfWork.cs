@@ -20,6 +20,11 @@ namespace AbdulrhmanBooks.DataAccess.Repository
         public ICategoryRepository Category { get; private set; }
         public ISP_Call SP_Call { get; private set; } // Name changed to match the interface
 
+        public ISP_Call IS_Call
+        {
+            get { return SP_Call; }
+        }
+
         public void Dispose()
         {
             _db.Dispose();

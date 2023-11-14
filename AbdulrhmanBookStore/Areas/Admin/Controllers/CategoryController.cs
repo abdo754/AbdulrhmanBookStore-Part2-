@@ -28,8 +28,8 @@ namespace AbdulrhmanBookStore.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var allObj = _unitOfWork.Category.GetAll();
-            return Json(new { data = allObj }); // Return the data as JSON
+            var allCategories = _unitOfWork.Category.GetAll();
+            return Json(new { data = allCategories }); // Return the data as JSON
         }
         #endregion
 
