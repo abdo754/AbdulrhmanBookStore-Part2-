@@ -23,6 +23,20 @@ namespace AbdulrhmanBookStore.Areas.Admin.Controllers
         {
             return View();
         }
+        public IActionResult Upsert(int? id)
+        {
+            Category category = new Category();
+            if (id == null)
+            {
+                return View(category);
+            }
+            category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+            if (category == null)
+            {
+                return NotFound();
+            }
+            return View();
+        }
 
         #region API CALLS
         [HttpGet]
