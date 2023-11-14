@@ -100,3 +100,7 @@ add new raze view in catgory file and use the code from the blackbored the you h
 chage the link name from privecy to category and link should work 
 chnaged postion of the link 
 update the layout and add pics 
+
+
+11/14/2023
+add the pictures for category
