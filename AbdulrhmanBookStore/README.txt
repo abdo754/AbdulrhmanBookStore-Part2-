@@ -104,3 +104,4 @@ update the layout and add pics
 
 11/14/2023
 add the pictures for category
+evething works but the create does not
